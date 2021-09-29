@@ -1,0 +1,174 @@
+.other-courses-title {
+  font-family: $font_UTM;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: -2px;
+  -webkit-text-stroke-width: 2px;
+  color: $darkblue_color;
+  
+  .title-underline {
+    width: 470px;
+    height: 6px;
+    background-color: $green_color;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+    }
+  }
+  
+.other-courses-list {
+  margin-top: 110px;
+}
+  
+.other-courses-item {
+  @include courses-item;
+
+  .other-courses-top {
+    @include courses-top;
+
+    .other-courses-img {
+      @include courses-img;
+    }
+  }
+
+  .other-courses-body {
+    @include courses-body;
+
+    .other-courses-heading {
+      @include courses-heading;
+    }
+
+    .other-courses-desc {
+      @include courses-desc;
+    }
+
+    .other-courses-btn {
+      @include courses-btn;    
+    }
+
+    .other-courses-btn:hover {
+      text-decoration: none;
+      color: $black_color;
+    }
+  }
+}
+.other-courses-img {
+  @include courses-img;
+}
+
+.bg-css {
+  background-color: $css-background-color;
+}
+
+.bg-rails {
+  background-color: $rails-background-color;
+}
+
+.bg-java {
+  background-color: $java-background-color;
+}
+  
+.view-all {
+  color: $green_color;
+  font-family: $font_UTM;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-stroke-width: 1.5px;
+  margin-top: 60px;
+
+  .view-all-arrow {
+    width: 47px;
+    height: 26px;
+  }
+  
+  &:hover {
+    color: $black_color;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+  .other-courses-title {
+    font-size: 50px;
+
+    .title-underline {
+      width: 303px;
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .courses-img-css {
+    height: 110px;
+    }
+    
+  .courses-img-rails {
+    height: 110px;
+  }
+    
+  .courses-img-java {
+    height: 110px;
+  }
+    
+  .other-courses-item {
+    .other-courses-body {
+      padding: 10px 10px;
+
+      .other-courses-heading{
+        font-size: 20px;
+      }
+
+      .other-courses-desc {
+        font-size: 12px;
+        }
+        
+      .other-courses-btn {
+        font-size: 8px;
+      }
+    }
+  } 
+}
+  
+@media(max-width: 545px) {
+  .other-courses-title {
+    font-size: 40px;
+
+    .title-underline {
+      width: 245px;
+      margin-top: 0;
+    }
+  }
+
+  .other-courses-list {  
+    .courses-flex {
+      @include courses-flex;
+      align-items: center;
+    }
+  }
+      
+  .other-courses-item {
+    justify-items: center;
+    width: 280px;
+    height: 389px;
+    margin-bottom: 30px;
+          
+    .other-courses-body {
+      padding: 0 10px;
+      
+      .other-courses-desc {
+        font-size: 14px;
+      }
+        
+      .other-courses-btn {
+        font-size: 16px;
+      }
+    }  
+  }
+
+  .view-all {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+}

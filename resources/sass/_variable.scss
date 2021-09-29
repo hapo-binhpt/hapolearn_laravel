@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+@font-face {
+  font-family: "utm_bryantlgregular";
+  src: url(../assets/fonts/utm_bryantlg-webfont.woff2) format("woff2"),url(../assets/fonts/utm_bryantlg-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  }
+
+$font_Open_Sans: "Open Sans", sans-serif;
+$font_UTM: "utm_bryantlgregular";
+$green_color: #B2D235;
+$white_color: #fff;
+$black_color: #000;
+$darkblue_color: #11114E;
+$border_color: #E5E5E5;
+$button_outline: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+$white_bg_color: #fefbfb;
+$text_navbar: #505353;
+$grey_color: #e5e5e5;
+$linear-gradient-color: #ece5e5;
+$courses-btn-box-shadow: inset 0px 1.5px 2px #6F8710;
+$courses-body-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+$htmlcss-background-color: #3F6185;
+$lavarel-background-color: #DC594C;
+$rails-background-color: #E14E40;
+$java-background-color: #1B75BB;
+$php-background-color: #556598;
+$css-background-color: #24ABE2;
+$feedback-arrow-color: #969494;
+$grey-circle-color: #C4C4C4;
+$dark-color: #505353;
+$border-text-color: #E2E2E2;
+$grey-border-color: #D9DADC;
+$rating-star-color: #F2C54F;
+$copyright-background-color: #454545;
+$title-chatbox-color: #7f7f7f;
+$chat-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+$textsms-color: #F1F0F0;
+$messsenger-color: #3184F7;
+$text-messenger-color: #b3b3b3;
+$input_color: #F2F2F2;
+$button_login_box_shadow: inset 0px 1.5px 2px #6F8710;
+$google_account_color: #DC4E41;
+$facebook_account_color: #3B5999;
+
+@mixin courses-item {
+  width: 100%;
+  margin: 0 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s;
+}
+
+@mixin courses-img {
+  width: 60%;
+  justify-content: center;
+}
+
+@mixin courses-top {
+  height: 190px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+@mixin courses-body {
+  padding: 30px;
+  font-family: $font_UTM;
+  box-shadow: $courses-body-box-shadow;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}
+
+@mixin courses-heading {
+  font-size: 20px;
+  line-height: 37px;
+  color: $green_color;
+  font-weight: 800;
+  line-height: 37px;
+  letter-spacing: -0.05em;
+}
+
+@mixin courses-btn {
+  padding: 9px 36px;
+  background-color: $green_color;
+  color: $white_color;
+  font-weight: bold;
+  border-radius: 22px;
+  box-shadow: $courses-btn-box-shadow;
+}
+
+@mixin courses-desc {
+  font-size: 16px;
+}
+
+@mixin courses-flex {
+  display: flex;
+  flex-direction: column !important;
+}
