@@ -14,4 +14,3 @@
     </div>
     <img class="logo-messenger" alt="logo-messenger" src="./assets/imgs/messenger-icon.png"></img>
 </div>
-   
