@@ -1,0 +1,94 @@
+.statistic {
+  width: 100%;
+  margin-top: 110px;
+
+  &-title {
+    font-family: $font_UTM;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    color: $darkblue_color;
+    -webkit-text-stroke-width: 2px;
+  }
+
+  &-underline {
+    width: 276px;
+    height: 6px;
+    background-color: $green_color;
+    border-radius: 5px;
+  }
+
+  .statistic-content {
+    margin-top: 60px;
+
+    .statistic-courses {
+      padding: 0px 50px;
+    }
+
+    .statistic-learners {
+      padding-left: 0px 50px;
+    }
+
+    .item-name {
+      font-family: $font_UTM;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 74px;
+      color: $text_navbar;
+    }
+
+    .item-number {
+      font-family: $font_UTM;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 74px;
+      color: $green_color;
+      text-align: center;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1140px) and (min-width: 575px) {
+  .statistic {
+    margin-top: 60px;
+
+    &-title {
+      font-size: 50px;
+      line-height: 60px;
+
+      .statistic-underline {
+        width: 175px;
+        margin-top: 7px;
+      }
+    }
+
+    .statistic-content {
+      margin-top: 30px;
+
+      .item-name {
+        font-size: 40px;
+        line-height: 48px;
+      }
+
+      .item-number {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .statistic {
+    .item-name {
+      flex-direction: column !important;
+      align-items: center;
+    }
+
+    .item-number {
+      flex-direction: column !important;
+      align-items: center;
+    }
+  }
+}

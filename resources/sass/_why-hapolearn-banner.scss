@@ -1,0 +1,161 @@
+.why-hapolearn-banner {
+  background-image: url(../assets/imgs/why_hapolearn_banner.png);
+  height: 740px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 110px;
+}
+
+.banner-slogan {
+  color: $white_color;
+  font-family: $font_UTM;
+  position: absolute;
+  top: 50px;
+
+  .slogan-title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 85px;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    margin-bottom: 25px;
+  }
+
+  .slogan-content {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+
+    .fa-check-circle {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 10px;
+      align-items: center;
+    }  
+  }
+}
+
+.banner-devices {
+  background-image: url(../assets/imgs/why_hapolearn_devices.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 783px;
+  height: 520px;
+}
+
+.banner-laptop {
+  background-image: url(../assets/imgs/why_hapolearn_laptop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 478px;
+  height: 478px;
+  position: absolute;
+  top: -170px;
+  transform: rotate(17.12deg);
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+  .why-hapolearn-banner {
+    height: 395px;
+    margin-top: 80px;
+    position: relative;
+  }
+
+  .banner-slogan {
+    margin-top: 10px;
+  
+    .slogan-title {
+      font-size: 40px;
+      line-height: 61px;
+      position: relative;
+      left: 65%;
+      bottom: 30px;
+    }
+  
+    .slogan-content {
+      height: 25px;
+      font-size: 15px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      overflow: hidden;
+  
+      .fa-check-circle {
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 5px;
+        align-items: center;
+      }  
+    }
+  }
+
+  .banner-devices {
+    width: 378px;
+    height: 259px;
+    margin-top: 120px;
+  }
+  
+  .banner-laptop {
+    width: 267px;
+    height: 267px;
+    position: absolute;
+    left: -14px;
+    top: -100px;
+  }
+}
+
+@media(max-width: 545px) {
+  .why-hapolearn-banner {
+    height: 570px;
+    width: 100%;
+    margin-top: 90px;
+    position: relative
+  }
+
+  .banner-slogan {
+    margin-top: 50px;
+  
+    .slogan-title {
+      width: 228px;
+      height: 100px;       
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 0px;
+      text-align: left;
+      position: relative;
+      left: 20%;
+      bottom: 20px;
+    }
+  
+    .slogan-content {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+  
+      .fa-check-circle {
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 5px;
+        align-items: center;
+      }  
+    }
+  }
+
+  .banner-devices {
+    width: 316px;
+    height: 218px;
+    margin-top: 0;
+    margin-left: 45px;
+  }
+  
+  .banner-laptop {
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    top: -80px;
+    left: -50px;
+  }
+}
