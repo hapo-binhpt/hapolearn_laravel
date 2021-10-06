@@ -22,7 +22,7 @@ class CreateCoursesTable extends Migration
             $table->integer('learn_time')->nullable();
             $table->bigIncrements('quizzes')->nullable();
             $table->bigInteger('price')->nullable();
-            $table->softDelete();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -19,7 +19,7 @@ class UpdateUsersTable extends Migration
             $table->string('address', 255)->nullable();
             $table->integer('phone')->nullable();
             $table->string('intro', 255)->nullable();
-            $table->softDelete();
+            $table->softDeletes();
         });
     }
 

@@ -20,7 +20,7 @@ class CreateReviewsTable extends Migration
             $table->string('content', 255)->nullable();
             $table->float('rate')->nullable();
             $table->integer('location')->nullable();
-            $table->softDelete();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
